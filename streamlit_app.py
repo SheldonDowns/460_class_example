@@ -30,3 +30,11 @@ if st.button("Predict"):
         "height": [height],
         "shoe_size": [normalized_shoe_size]
     })
+
+prediction = model.predict(input_data)[0]
+probability = model.predict_proba(input_data)[0]   
+
+st.subheader("Prediction result")
+
+st.write(f"Prediction: {prediction}")
+st.write(f"Probability: {probability}")
