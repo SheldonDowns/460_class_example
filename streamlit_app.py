@@ -19,4 +19,4 @@ with col1:
 with col2:
     inches = st.number_input("Height (inches)", min_value=0, max_value = 11, value=6, step=1)
 
-height = feet (12 /inches)
+height = feet * (12 / inches)  # Ensure inches is nonzero
